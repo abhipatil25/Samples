@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+
+<title>website</title>
+
+<style type="text/css">
+
+	*{
+		margin: 0px;
+		padding: 0px;
+		font-family: helvetica;
+	}
+	header, section, nav, aside{
+		display: block;
+	}
+	body{
+		width: 100%;
+		display: -webkit-box;
+		-webkit-box-pack: center;
+	}
+	#big_wrapper{
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-box-flex: 1;
+	}
+	#header_{
+		background-color: yellow;
+	}
+
+	a{
+		text-decoration: none;
+	}
+	li:hover{
+		background-color: #7897a9;
+		cursor: pointer;
+		transition: 0.3s all ease-in-out;
+	}
+	li:hover a{
+		color: white;
+	}
+	nav ul li{
+		list-style: none;
+		display: inline-block;
+		float: right;
+	}
+	nav{
+		background-color: #00466e;
+		opacity: 0.5;
+	}
+	#new_div{
+		display: -webkit-box;
+		-webkit-box-orient: horizontal;
+	}
+	#section_{
+		-webkit-box-flex: 1;
+		padding: 10px;
+		margin: 5px;
+	}
+	aside{
+		width: 150px;
+		padding: 10px;
+		background-color: gray;
+		margin: 5px;
+	}
+	footer{
+		/*padding: 15px;*/
+		text-align: center;
+	}
+	img{
+		width: 200px;
+		padding: 10px 0px;
+		margin-left: 50px;
+		float: left;
+	}
+	img:hover{
+		cursor: pointer;
+	}
+	#nav_ h1 a{
+		float: left;
+		color: black;
+		margin: 17px;
+	}
+	nav{
+		padding: 0px 120px;
+	}
+	nav ul{
+		overflow: hidden;
+	}
+	.dropdown_list .dropdown_content a{
+		display: block;
+		padding: 12px 16px;
+		color: black;
+	}
+	.dropdown_content{
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 150px;
+	}
+	.dropdown_list:hover .dropdown_content{
+		display: block;
+	}
+	.dropdown_list .dropdown_content a:hover{
+		background-color: #006baa;
+	}
+	nav li a{
+		padding: 22px 24px;
+	}
+	.img{
+		background-image: url("https://drive.google.com/uc?export=view&id=1r9HBwpdkMNktMN2Ah9kWJs1PtHk2tRl2") ;
+		background-position: center;
+		background-size: cover;
+		height: 92vh;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	nav ul a{
+		color: white;
+		opacity: 1;
+	}
+	.block{
+		text-align: center;
+	}
+	.block h1{
+		font-family: 'Bangers', cursive;
+		font-size: 70px;
+		font-weight: 100;
+		text-shadow:1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a
+	}
+	.block a{
+		text-decoration: none;
+		border: 1px solid black;
+		padding: 5px;
+		margin: 5px 0px;
+		background: #95806B;
+	    border-radius: 5px;
+	    padding: 10px;
+	    color: #4D1E2E;
+		transition: 0.2s all ease-in-out;
+
+	}
+	.block a:hover{
+		background: #4D1E2E;
+		color: #95806B;
+	}
+	nav a{
+		display: block;
+	}
+	.block p{
+		margin: 40px 0px;
+	}
+	footer li{
+		list-style-type: none;
+	}
+	.copyright{
+		background: gray;
+		display: block;
+	}
+	.footer_columns div{
+		float: left;
+	}
+	.footer_columns{
+		display: inline-block;
+	}
+	footer{
+		display: flex;
+	}
+	.column{
+		margin: 30px 50px
+	}
+	footer h1{
+		margin: 30px 40px
+	}
+	.copyright{
+		text-align: center;
+	}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="big_wrapper">
+
+<!-- 	<header id="header_">
+		<h1>Header</h1>
+	</header> -->
+
+	<nav id="nav_">
+		<h1>
+			<a href="">LOGO</a>
+		</h1>
+		<ul>
+			<li class="dropdown_list">
+				<a href="" class="drop_down">Dropdown</a>
+				<div class="dropdown_content">
+					<a href="">Item 1</a>
+					<a href="">Item 2</a>
+				</div>
+			</li>
+			<li>
+				<a href="">Contact</a>
+			</li>
+			<li>
+				<a href="">About</a>
+			</li>
+			<li>
+				<a href="">Home</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="img">
+		<div class="block" >
+			<h1>Welcome to my site</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<a href="#">Button</a>
+		</div>	
+	</div>										
+
+	<footer id="footer_">
+		<h1>
+			<a href="">LOGO</a>
+		</h1>
+
+		<div class="footer_columns">
+			<div class="column">
+				<h3>Column 1</h3>
+				<ul>
+					<li>Home</li>
+					<li>About us</li>
+					<li>Contact us</li>
+					<li>Careers</li>
+					<li>Sitemap</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Column 2</h3>
+				<ul>
+					<li>Home</li>
+					<li>About us</li>
+					<li>Contact us</li>
+					<li>Careers</li>
+					<li>Sitemap</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Column 3</h3>
+				<ul>
+					<li>Home</li>
+					<li>About us</li>
+					<li>Contact us</li>
+					<li>Careers</li>
+					<li>Sitemap</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<div class="copyright"><p>copyright &copy</p></div>
+
+
+</div>
+
+</body>
+</html>
