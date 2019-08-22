@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Pacifico|Righteous&display=swap" rel="stylesheet">
 
 <title>website</title>
 
@@ -35,13 +36,16 @@
 	a{
 		text-decoration: none;
 	}
-	li:hover{
-		background-color: #7897a9;
+	nav li:hover{
+		background-color: #96c6c2;
 		cursor: pointer;
 		transition: 0.3s all ease-in-out;
 	}
 	li:hover a{
 		color: white;
+	}
+	nav ul li a{
+		color: #116762;
 	}
 	nav ul li{
 		list-style: none;
@@ -49,8 +53,10 @@
 		float: right;
 	}
 	nav{
-		background-color: #00466e;
-		opacity: 0.5;
+		background-color: #7cb5b0;
+		opacity: 0.95;
+		width: -webkit-fill-available;
+    	position: fixed;
 	}
 	#new_div{
 		display: -webkit-box;
@@ -70,15 +76,6 @@
 	footer{
 		/*padding: 15px;*/
 		text-align: center;
-	}
-	img{
-		width: 200px;
-		padding: 10px 0px;
-		margin-left: 50px;
-		float: left;
-	}
-	img:hover{
-		cursor: pointer;
 	}
 	#nav_ h1 a{
 		float: left;
@@ -106,19 +103,24 @@
 		display: block;
 	}
 	.dropdown_list .dropdown_content a:hover{
-		background-color: #006baa;
+		background-color: #7ab0ab;
+		color: white;
+		transition: 0.2s all ease;
+
 	}
 	nav li a{
-		padding: 22px 24px;
+		padding: 27px 28px;
 	}
 	.img{
 		background-image: url("https://drive.google.com/uc?export=view&id=1r9HBwpdkMNktMN2Ah9kWJs1PtHk2tRl2") ;
+		/*background-image: url(image.jpg);*/
 		background-position: center;
 		background-size: cover;
-		height: 92vh;
+		height: 100vh;
 		display: flex;
 	    flex-direction: column;
 	    justify-content: center;
+	    background-attachment: fixed;
 	}
 	nav ul a{
 		color: white;
@@ -144,10 +146,9 @@
 		margin: 5px 0px;
 		background: #95806B;
 	    border-radius: 5px;
-	    padding: 10px;
+	    padding: 12px 45px;
 	    color: #4D1E2E;
 		transition: 0.2s all ease-in-out;
-
 	}
 	.block a:hover{
 		background: #4D1E2E;
@@ -158,6 +159,7 @@
 	}
 	.block p{
 		margin: 40px 0px;
+		font-size: 20px;
 	}
 	footer li{
 		list-style-type: none;
@@ -165,25 +167,83 @@
 	.copyright{
 		background: gray;
 		display: block;
+		background-color: #26a69ad9;
+		height: 45px;
+		text-align: center;
+
 	}
 	.footer_columns div{
 		float: left;
 	}
 	.footer_columns{
 		display: inline-block;
+		width: 77%;
 	}
 	footer{
-		display: flex;
+		/*display: flex;*/
+		background-color: #26a69a47;
 	}
 	.column{
-		margin: 30px 50px
+		margin: 30px 0px;
+		text-align: left;
+		width: 18%;
 	}
 	footer h1{
-		margin: 30px 40px
+		margin: 20px 10px
 	}
-	.copyright{
-		text-align: center;
+	.copyright p{
+		margin: 14px;
 	}
+	.para{
+		margin: 50px 130px;
+		text-align: justify;
+	}
+	.column h3{
+		margin: 20px 0;
+	}
+	.column ul li{
+		margin: 5px 0;
+		width: fit-content;
+	}
+	.footer_columns p{
+		margin: 20px 10px;
+	}
+	.column ul li a{
+		display: block;
+	}
+	.company_detail p{
+		margin-right: 55px;
+		text-align: justify;
+	}
+	footer li:hover a{
+		color: #7ab0ab;
+		transition: 0.2s all ease;
+	}
+	footer li a{
+		color: #00695C;
+	}
+	.company_detail h1 a{
+		color: black;
+	}
+	.company_detail h1:hover a{
+		color: #079087;
+		transition: 0.2s all ease;
+	}
+	.company_detail{
+		margin-right: 55px;
+	}
+	#nav_ h1 a:hover {
+		color: #116762;
+		transition: 0.2s all ease;
+	}
+	.big_wrapper section{
+		width: 100%;
+		background-color: red;
+	}
+	section:nth-child(even){
+		background: #c2e6e352;
+	}
+
 
 </style>
 </head>
@@ -199,7 +259,7 @@
 
 	<nav id="nav_">
 		<h1>
-			<a href="">LOGO</a>
+			<a href="" style="font-family: 'Righteous', cursive; font-size: 30px">LOGO</a>
 		</h1>
 		<ul>
 			<li class="dropdown_list">
@@ -228,49 +288,135 @@
 			tempor incididunt ut labore et dolore magna aliqua.</p>
 			<a href="#">Button</a>
 		</div>	
-	</div>										
+	</div>							
+
+	<section>
+		<div class="para">
+			<h1>Home</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>	
+	</section>		
+
+	<section>
+		<div class="para">
+			<h1>About</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>	
+	</section>
+	
+	<section>
+		<div class="para">
+			<h1>Contact</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>	
+	</section>
+
 
 	<footer id="footer_">
-		<h1>
-			<a href="">LOGO</a>
-		</h1>
-
+		
 		<div class="footer_columns">
+			<div class="column company_detail">
+				<h1>
+					<a href="" style="font-family: 'Righteous', cursive;">LOGO</a>
+				</h1>
+				<p>
+					<strong>Address:</strong>
+					Lorem ips dolor sit amet, coetur adicing elit.<br>
+					<strong>Email:</strong>
+					abc@xyz.com
+				</p>
+			</div>
 			<div class="column">
 				<h3>Column 1</h3>
 				<ul>
-					<li>Home</li>
-					<li>About us</li>
-					<li>Contact us</li>
-					<li>Careers</li>
-					<li>Sitemap</li>
+					<li><a href="">Home</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">Sitemap</a></li>
 				</ul>
 			</div>
 			<div class="column">
 				<h3>Column 2</h3>
 				<ul>
-					<li>Home</li>
-					<li>About us</li>
-					<li>Contact us</li>
-					<li>Careers</li>
-					<li>Sitemap</li>
+					<li><a href="">Home</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">Sitemap</a></li>
 				</ul>
 			</div>
 			<div class="column">
 				<h3>Column 3</h3>
 				<ul>
-					<li>Home</li>
-					<li>About us</li>
-					<li>Contact us</li>
-					<li>Careers</li>
-					<li>Sitemap</li>
+					<li><a href="">Home</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Sitemap</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Column 4</h3>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Sitemap</a></li>
 				</ul>
 			</div>
 		</div>
 	</footer>
 
 	<div class="copyright"><p>copyright &copy</p></div>
-
 
 </div>
 
