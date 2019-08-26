@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function p_age() {
+			var input = document.getElementById('age').value;
+			var year = input.split("/")[2];
+			var curr_year = Date().split(" ")[3];
+			var age = curr_year - year;
+			// var age = year - 2019; //another way
+			document.getElementById('result').innerHTML = 'Your Age is '+age;
+		}
+	</script>
+
+	<style type="text/css">
+		body{background-color: #339966}
+		h3{color:#003399 ;
+			font-size: 50px;
+			text-shadow: -5px -2px 5px #f9f9f9;}
+		.u_input{position: relative;
+			text-align: center;
+
+		}
+		#age{background-color: #e6e6ff;padding: 10px ;}
+		#bt1{background-color: #9999ff;padding: 15px 32px;}
+		#result{text-align: center;color: #66ffcc;text-decoration: underline;font-size: 50px;margin-top: 100px;}
+
+	</style>
+</head>
+
+<body >
+
+	<div class="u_input">
+		<h3>Enter your Birth Date in DD/MM/YYYY Format:</h3>
+		<input type="text" name="age" id="age" >
+		<input type="button" name="B1" value="Click to check ur age" onclick="p_age()" id="bt1">
+	</div>
+
+	<div id="result"></div>
+
+</body>
+</html>
