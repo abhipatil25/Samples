@@ -16,6 +16,9 @@
 		padding: 0px;
 		font-family: helvetica;
 	}
+	html{
+		scroll-behavior: smooth;
+	}
 	header, section, nav, aside{
 		display: block;
 	}
@@ -118,7 +121,7 @@
 		background-size: cover;
 		height: 100vh;
 		display: flex;
-	    flex-direction: column;
+	    align-items: center;
 	    justify-content: center;
 	    background-attachment: fixed;
 	}
@@ -166,11 +169,11 @@
 	}
 	.copyright{
 		background: gray;
-		display: block;
 		background-color: #26a69ad9;
 		height: 45px;
-		text-align: center;
-
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
 	}
 	.footer_columns{
 		display: flex;
@@ -190,12 +193,13 @@
 	footer h1{
 		margin: 20px 10px
 	}
-	.copyright p{
-		margin: 14px;
-	}
 	.para{
-		margin: 50px 130px;
+		margin: 100px 130px;
 		text-align: justify;
+	}
+	.para h1{
+		font-size: 3em;
+    	margin: 50px 0;
 	}
 	.column h3{
 		margin: 20px 0;
@@ -242,6 +246,9 @@
 	section:nth-child(even){
 		background: #c2e6e352;
 	}
+	body section{
+		height: 100vh;
+	}
 
 
 </style>
@@ -262,13 +269,13 @@
 		</h1>
 		<ul>
 			<li>
-				<a href="">Home</a>
+				<a href="#home">Home</a>
 			</li>
 			<li>
-				<a href="">Contact</a>
+				<a href="#contact">Contact</a>
 			</li>
 			<li>
-				<a href="">About</a>
+				<a href="#about">About</a>
 			</li>
 			<li class="dropdown_list">
 				<a href="" class="drop_down">Dropdown</a>
@@ -289,7 +296,7 @@
 		</div>	
 	</div>							
 
-	<section>
+	<section id="home">
 		<div class="para">
 			<h1>Home</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -313,9 +320,9 @@
 		</div>	
 	</section>		
 
-	<section>
+	<section id="contact">
 		<div class="para">
-			<h1>About</h1>
+			<h1>Contact</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -337,9 +344,9 @@
 		</div>	
 	</section>
 	
-	<section>
+	<section id="about">
 		<div class="para">
-			<h1>Contact</h1>
+			<h1>About</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
