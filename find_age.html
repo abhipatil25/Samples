@@ -4,15 +4,27 @@
 	<script type="text/javascript">
 		function p_age() {
 			var input = document.getElementById('age').value;
+
+			// var day = input.split("/")[0];
+			var month = input.split("/")[1];
 			var year = input.split("/")[2];
-			var curr_year = Date().split(" ")[3];
-			var age = curr_year - year;
+
+			// var curr_year = Date().split(" ")[3];
+			var curr_year = new Date().getFullYear();
+			var years = curr_year - year;
 			// var age = year - 2019; //another way
-			document.getElementById('result').innerHTML = 'Your Age is '+age;
+
+			var curr_month = new Date().getMonth();
+			var months = curr_month - month;
+
+			// var curr_day = new Date().getDay();
+			// var days = curr_day - day;
+
+			document.getElementById('result').innerHTML = 'Your Age is '+ years + " years " + months + ' months ';
 		}
 	</script>
 
-	<style type="text/css">
+<style type="text/css">
 		body{background-color: #339966}
 		h3{color:#003399 ;
 			font-size: 50px;
